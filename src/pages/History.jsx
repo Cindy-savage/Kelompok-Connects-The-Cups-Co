@@ -64,7 +64,7 @@ export default function History() {
 
       <div className="riwayat-section">
         {successMsg && (
-          <div className="alert alert-success text-center" style={{ backgroundColor: '#e8f5e9', borderColor: '#c8e6c9', color: '#2e7d32', padding: '12px', borderRadius: '4px', marginBottom: '20px', fontSize: '0.95rem', letterSpacing: '1px', fontWeight: '500' }}>
+          <div className="border text-center" style={{ backgroundColor: '#e8f5e9', borderColor: '#c8e6c9', color: '#2e7d32', padding: '12px', borderRadius: '4px', marginBottom: '20px', fontSize: '0.95rem', letterSpacing: '1px', fontWeight: '500' }}>
             ✓ {successMsg}
           </div>
         )}
