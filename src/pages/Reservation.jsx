@@ -208,7 +208,7 @@ export default function Reservation() {
       </div>
 
       {editIndex !== null && (
-        <div className="alert alert-info text-center" style={{ backgroundColor: '#fdf5eb', borderColor: '#ead8be', color: '#8d5115', fontSize: '0.9rem', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '20px', borderRadius: '4px', fontWeight: '600' }}>
+        <div className="border text-center" style={{ backgroundColor: '#fdf5eb', borderColor: '#ead8be', color: '#8d5115', fontSize: '0.9rem', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '20px', borderRadius: '4px', fontWeight: '600', padding: '12px' }}>
           Masukkan Perubahan
         </div>
       )}
