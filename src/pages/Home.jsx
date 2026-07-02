@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const slidesData = [
   { img: '/assets/images/au1.jpeg', alt: 'The Cups & Co - Suasana Kafe' },
@@ -11,6 +11,16 @@ export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const timerRef = useRef(null);
   const startXRef = useRef(0);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '#about') {
+      const el = document.getElementById('about');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
 
   const startTimer = () => {
     stopTimer();
